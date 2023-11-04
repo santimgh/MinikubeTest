@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-app-container
-          image: spring-boot-docker.jar
+          image: spring-image.jar:latest
           imagePullPolicy: Never
           ports:
             - containerPort: 8080

@@ -1,4 +1,4 @@
 FROM openjdk:19
 EXPOSE 8080
-ADD Assignment/Backend/Backend/target/spring-boot-docker.jar spring-boot-docker.jar
-ENTRYPOINT ["java","-jar","/spring-boot-docker.jar"]
+ADD Backend/Backend/target/spring-image.jar spring-image.jar
+ENTRYPOINT ["java","-jar","/spring-image.jar"]
