@@ -30,8 +30,5 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag spring-image.jar:latest
 
-      - uses: actions/checkout@v3
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag postgres:latest
 
 
