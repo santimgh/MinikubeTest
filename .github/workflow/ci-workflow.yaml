@@ -47,5 +47,10 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t spring-image.jar .
+          docker build -t docker.io/santimiguel/spring-image.jar:latest .
+
+      - name: Publish Docker image
+        run: |
+          echo ${{ secrets.DOCKER_HUB_TOKEN }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
+          docker push docker.io/santimiguel/spring-image.jar:latest .
 
