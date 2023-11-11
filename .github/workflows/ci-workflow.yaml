@@ -13,6 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Debug
+        run: |
+            ls -l /mnt/c/Users/34654/Desktop/VIA\ Semesters/4th\ Semester/DOC/Assignment/Backend
+            file /mnt/c/Users/34654/Desktop/VIA\ Semesters/4th\ Semester/DOC/Assignment/Backend/mvnw
+
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
